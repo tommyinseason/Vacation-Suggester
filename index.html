@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
@@ -11,20 +10,24 @@
   <!--  This is the heading jumbotron of the body  -->
   <body>
     <div class="jumbotron">
-      <h1>Vacation Suggester</h1>
+      <h1><strong>Vacation Suggester</strong></h1>
     </div>
     <!--Start of the container and forms  -->
     <div class="container">
-      <form>
+      <form id="survey">
+        <div class="form-group">
+         <label for="name">Full Name</label>
+         <input id="name" class="form-control" type="text">
+       </div>
         <!-- Question 1 -->
         <div class="row">
           <div class="col-xs-6">
-            <div id="backround">
-                <h2>Pick your favorite backround image</h2>
+            <div id="setting">
+                <h2>Pick your favorite setting</h2>
               </div>
               <div class="radio">
                 <label>
-                  <input name="setting" value="0" checked type="radio">
+                  <input name="setting" value="0" type="radio">
                   Tropical Beach
                   <img src="https://lh5.ggpht.com/X6S-3G1irwe649hOPWe2GYqcl4eSxK69r6Y1CGoC9oXk45MRwTTywpz0vdVoQS0_vVVX=h900" alt="Photo Of a Beach Setting" /></img>
                 </label>
@@ -65,7 +68,7 @@
             </div>
               <div class="radio">
                 <label>
-                  <input name="breakfast" value="0" checked type="radio">
+                  <input name="breakfast" value="0" type="radio">
                   Juice or Smoothie
                 </label>
               </div>
@@ -101,7 +104,7 @@
               </div>
                 <div class="radio">
                   <label>
-                    <input name="president" value="0" checked type="radio">
+                    <input name="president" value="0" type="radio">
                     Bob Marley
                   </label>
                 </div>
@@ -137,7 +140,7 @@
                 </div>
                   <div class="radio">
                     <label>
-                      <input name="pet" value="0" checked type="radio">
+                      <input name="pet" value="0" type="radio">
                       Dog
                     </label>
                   </div>
@@ -173,7 +176,7 @@
                   </div>
                     <div class="radio">
                       <label>
-                        <input name="softdrink" value="10" checked type="radio">
+                        <input name="softdrink" value="10" type="radio">
                         Coca Cola
                       </label>
                     </div>
@@ -202,86 +205,74 @@
                       </label>
                     </div>
                 </div>
-                <!-- Qusetion 6-->
-                  <div class="col-xs-6">
-                    <div id="dayoff">
-                      <h2>What would you do on your day off?</h2>
-                    </div>
-                      <div class="radio">
-                        <label>
-                          <input name="dayoff" value="5" checked type="radio">
-                          Mow The Lawn
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input name="dayoff" value="45" type="radio">
-                          Sleep In
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input name="dayoff" value="15" type="radio">
-                          Road Trip
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input name="dayoff" value="25" type="radio">
-                          Play Video Games
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input name="dayoff" value="35" type="radio">
-                          Keep Working
-                        </label>
-                      </div>
-                  </div>
-                  <!-- question 7 -->
+                  <!-- Question 6 -->
                     <div class="col-xs-6">
                       <div id="liquor">
                         <h2>Pick your favorite type of liquor</h2>
                       </div>
                         <div class="liquor">
                           <label>
-                            <input name="dayoff" value="45" checked type="radio">
+                            <input name="liquor" value="45" type="radio">
                             Cognac
                           </label>
                         </div>
                         <div class="liquor">
                           <label>
-                            <input name="dayoff" value="35" type="radio">
+                            <input name="liquor" value="35" type="radio">
                             Tequila
                           </label>
                         </div>
                         <div class="liquor">
                           <label>
-                            <input name="dayoff" value="25" type="radio">
+                            <input name="liquor" value="25" type="radio">
                             Vodka
                           </label>
                         </div>
                         <div class="liquor">
                           <label>
-                            <input name="dayoff" value="15" type="radio">
+                            <input name="liquor" value="15" type="radio">
                             Whiskey
                           </label>
                         </div>
                         <div class="liquor">
                           <label>
-                            <input name="dayoff" value="5" type="radio">
+                            <input name="liquor" value="5" type="radio">
                             Rum
                           </label>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
+                    <div class="col-xs-6">
+                        <button type="submit" class="button btn-success pull-left glyphicon glyphicon-plane"> PICK MY VACATION</button>
+                    </div>
+                  </form>
+                  <!-- End Of Forms -->
+                    <div class="col-xs-12">
+                <h4><span class="name"></span>
+              Your ideal vacation would be...</h4>
+              <br/>
+                <div id="amazon-rainforest">
+                  <img class=answer src="http://www.voglioviverecosi.com/wp-content/uploads/brazil2.jpg" alt="Photo of the Amazon Rainforest" />
+                  <h4>Amazon Rainforest</h4>
+                </div>
 
+                <div id="thailand">
+                  <img class=answer src="http://www.betches.com/sites/default/files/article/list/images/thailand2.jpg" alt="Photo of Thailand" />
+                  <h4>Thailand</h4>
+                </div>
 
+                <div id="havasu-falls">
+                  <img class=answer src="https://media.deseretdigital.com/file/34db028036?type=image/jpeg&c=14&a=4c9873e9" alt="Photo of Havasu Falls" />
+                  <h4>Havasu Falls</h4>
+                </div>
 
+                <div id="cruise-bahamas">
+                  <img class=answer src="http://www.gonegirlsguide.com/wp-content/uploads/2015/08/bahamas-holidays-information.jpg" alt="Photo of the Bahamas" />
+                  <h4>Cruise to the Bahamas</h4>
+                </div>
 
-
-        </div>
-         <button type="submit" class="btn btn-success center-block" aria-label="glyphicon-plane">
-          Pick my next vacation! <span class="glyphicon glyphicon-plane" aria-hidden="true"></span></button>
+          </div>
       </form>
     </div>
   </body>
