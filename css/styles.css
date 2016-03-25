@@ -1,0 +1,51 @@
+.jumbotron {
+  background-color: black;
+  color: aquamarine;
+  font-size: 200px;
+  text-align: center;
+  font-family: Blippo, fantasy;
+  text-shadow: 2pt 2pt blanchedalmond;
+
+}
+.col-xs-6 {
+  font-size: 14pt;
+  background-color: cadetblue;
+  border: 3pt solid black;
+  margin: 20px;
+  width: 46%;
+}
+#headline {
+  border: 2pt solid black
+  background-color: aquamarine;
+  color: black;
+  width: 900px;
+  height: 200px;
+  font-size: 22pt;
+  tex
+}
+.btn-success {
+
+  text-align: center;
+  margin: 40px;
+  background-color: aquamarine;
+  color: black;
+  font size: 22pt
+}
+.btn-success:hover {
+  margin: 10px;
+  background-color: deepskyblue;
+  color: hotpink;
+  font-size: 26pt
+}
+img {
+  width: 100px;
+  height: 70px;
+}
+h2 {
+  text-align: center;
+  font-size: 20pt;
+  text-decoration-style: solid;
+  text-decoration: underline;
+  font-family: arial black;
+  color: beige;
+}
